@@ -1,5 +1,6 @@
 *logs*
 *.log
 *~
+*.pyc
 _vim/ropevim/src*
 _vim/ropevim/pylibs*
