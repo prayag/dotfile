@@ -1,0 +1,15 @@
+[user]
+	name = Prayag Narula
+	email = prayag.narula@gmail.com
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[push]
+    default = matching
+[core]
+    editor = vim
+[merge]
+    tool = meld
