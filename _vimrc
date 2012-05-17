@@ -59,6 +59,7 @@ let mapleader=","             " change the leader to be a comma vs slash
 
 " Seriously, guys. It's not like :W is bound to anything anyway.
 command! W :w
+command! Q :q
 
 " Toggle the tasklist
 map <leader>td <Plug>TaskList
@@ -148,10 +149,6 @@ set grepprg=ack-grep          " replace the default grep program with ack
 set completeopt=menuone,longest,preview
 set pumheight=6             " Keep a small completion window
 
-" show a line at column 79
- if exists("&colorcolumn")
-    set colorcolumn=79
-endif
 
 "Move around tabs using cntrl+Right and cntrl+left
 
