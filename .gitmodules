@@ -52,3 +52,6 @@
 [submodule "_vim/bundle/py.test"]
 	path = _vim/bundle/py.test
 	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "_vim/bundle/solarized"]
+	path = _vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized
