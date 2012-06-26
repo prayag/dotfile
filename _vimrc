@@ -111,7 +111,7 @@ nmap <leader>a <Esc>:Ack!
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>
 
-source /usr/local/share/vim/plugin/ropevim.vim
+source   /System/Library/Frameworks/Python.framework/Versions/2.7/share/vim/plugin/ropevim.vim
 
 " Jump to the definition of whatever the cursor is on
 map <leader>j :RopeGotoDefinition<CR>
@@ -214,6 +214,7 @@ set incsearch               " Incrementally search while typing a /regex
 
 """" Display
 colorscheme wombat
+
 
 " ==========================================================
 " Python
