@@ -174,13 +174,11 @@ parse_svn_repository_root() {
   svn info 2>/dev/null | sed -ne 's#^Repository Root: ##p'
 }
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-
 source /usr/local/bin/virtualenvwrapper.sh
 source ~/.git-completion.bash
 # Add git and svn branch names
 export PS1="$PS1\$(parse_git_branch)\$(parse_svn_branch) "
 
 
-PATH=$PATH:/home/prayag/.gem/ruby1.9.1/bin/
+PATH=$PATH:/home/prayag/.gem/ruby1.9.1/bin
 export PATH
