@@ -182,3 +182,5 @@ export PS1="$PS1\$(parse_git_branch)\$(parse_svn_branch) "
 
 PATH=$PATH:/home/prayag/.gem/ruby1.9.1/bin
 export PATH
+
+. ~/.django_bash_completion

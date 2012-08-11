@@ -51,6 +51,9 @@
 " MakeGreen
 "    Generic test runner that works with nose
 "
+" Tagbar
+"    Displays tags in a window, ordered by class
+"
 " ==========================================================
 " Shortcuts 
 " ==========================================================
@@ -77,6 +80,9 @@ nmap <silent><Leader>te <Esc>:Pytest error<CR>
 
 " Run django tests
 map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
+
+" Toggle view class tags
+map <leader>ct <Esc>:TagbarToggle<CR>
 
 " ,v brings up my .vimrc
 " ,V reloads it -- making all changes active (have to save first)
@@ -148,8 +154,8 @@ set grepprg=ack-grep          " replace the default grep program with ack
 
 """ Insert completion
 " don't select first item, follow typing in autocomplete
-set completeopt=menuone,longest,preview
-set pumheight=6             " Keep a small completion window
+set completeopt=menuone,longest
+set pumheight=10             " Keep a small completion window
 
 
 "Move around tabs using cntrl+Right and cntrl+left
@@ -204,6 +210,7 @@ set shortmess+=a            " Use [+]/[RO]/[w] for modified/readonly/written.
 set ruler                   " Show some info, even without statuslines.
 set laststatus=2            " Always show statusline, even if only 1 window.
 set statusline=%<%f\ (%{&ft})%=%-19(%3l,%02c%03V%)%{fugitive#statusline()}
+set clipboard=unnamed       "Share unnamed clipboard with the system
 
 
 """ Searching and Patterns
