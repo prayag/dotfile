@@ -54,6 +54,9 @@
 " Tagbar
 "    Displays tags in a window, ordered by class
 "
+" Easymotion
+"   Move anywhere in the file
+"
 " ==========================================================
 " Shortcuts 
 " ==========================================================
