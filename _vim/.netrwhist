@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/prayag/Documents/Work/MobileWorks/webproject/src/mobiletworks/mobiletworks/html_desktop'
-let g:netrw_dirhist_2='/home/prayag/src/mobiletworks/mobiletworks/html_desktop'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/prayag/Documents/src/mobiletworks/mobiletworks'
+let g:netrw_dirhist_2='/Users/prayag/Documents/src/mobiletworks/mobiletworks/utils/management/commands'
+let g:netrw_dirhist_3='/Users/prayag/Documents/src/mobiletworks/mobiletworks'
