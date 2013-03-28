@@ -36,9 +36,6 @@
 " Git
 "    Syntax highlighting for git config files
 "
-" Minibufexpl
-"    Visually display what buffers are currently opened
-"
 " Pydoc
 "    Opens up pydoc within vim
 "
@@ -222,7 +219,7 @@ set hlsearch                " Highlight searches by default.
 set incsearch               " Incrementally search while typing a /regex
 
 """" Display
-colorscheme wombat
+colorscheme solarized 
 
 
 " ==========================================================
