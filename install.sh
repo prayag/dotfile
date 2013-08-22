@@ -33,5 +33,3 @@ git submodule foreach git submodule update
 cd _vim/bundle/command-t
 rake make
 
-#Install rope, ropemode and ropevim globally
-sudo pip install -U rope ropemode ropevim

@@ -58,3 +58,9 @@
 [submodule "_vim/bundle/easymotion"]
 	path = _vim/bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
+[submodule "_vim/bundle/jedi-vim"]
+	path = _vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "_vim/bundle/vim-flake8"]
+	path = _vim/bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git

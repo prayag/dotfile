@@ -3,7 +3,6 @@
 " ==========================================================
 " Dependencies - Libraries/Applications outside of vim
 " ==========================================================
-" Pep8 - http://pypi.python.org/pypi/pep8
 " Pyflakes
 " Ack
 " Rake & Ruby for command-t
@@ -54,6 +53,9 @@
 " Easymotion
 "   Move anywhere in the file
 "
+" Jedi
+"   Autocompletion for Python
+"
 " ==========================================================
 " Shortcuts 
 " ==========================================================
@@ -67,8 +69,6 @@ command! Q :q
 " Toggle the tasklist
 map <leader>td <Plug>TaskList
 
-" Run pep8
-let g:pep8_map='<leader>8'
 
 " run py.test's
 nmap <silent><Leader>tf <Esc>:Pytest file<CR>
@@ -117,12 +117,15 @@ nmap <leader>a <Esc>:Ack!
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>
 
+" Goto command using jedi-vim
+let g:jedi#goto_command = "<leader>t"
 
-" Jump to the definition of whatever the cursor is on
-map <leader>j :RopeGotoDefinition<CR>
+" Get definition using jedi-vim 
+let g:jedi#get_definition_command = "<leader>d"
 
 " Rename whatever the cursor is on (including references to it)
-map <leader>r :RopeRename<CR>
+let g:jedi#rename_command = "<leader>r"
+
 " ==========================================================
 " Pathogen - Allows us to organize our vim plugins
 " ==========================================================
@@ -137,8 +140,8 @@ call pathogen#helptags()
 syntax on                     " syntax highlighing
 filetype on                   " try to detect filetypes
 filetype plugin indent on     " enable loading indent file for filetype
-set number                    " Display line numbers
-set numberwidth=1             " using only 1 column (and 1 space) while possible
+set relativenumber                    " Display line numbers
+set numberwidth=2            
 set background=dark           " We are using dark background in vim
 set title                     " show title in console title bar
 set wildmenu                  " Menu completion in command mode on <Tab>
@@ -254,6 +257,13 @@ au BufRead *.js set makeprg=jslint\ %
 " ==========================================================
 " Try different completion methods depending on its context
 let g:SuperTabDefaultCompletionType = "context"
+
+
+"=========================================================
+"Flake8 - Check for pep8 compatibility everytime you write to a file
+"========================================================
+autocmd BufWritePost *.py call Flake8()
+
 
 " Add the virtualenv's site-packages to vim path
 py << EOF
