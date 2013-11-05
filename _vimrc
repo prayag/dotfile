@@ -107,7 +107,7 @@ map <c-h> <c-w>h
 imap <C-W> <C-O><C-W>
 
 " Open NerdTree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeToggle<CR>
 
 " Run command-t file search
 map <leader>f :CommandT<CR>
@@ -125,6 +125,14 @@ let g:jedi#get_definition_command = "<leader>d"
 
 " Rename whatever the cursor is on (including references to it)
 let g:jedi#rename_command = "<leader>r"
+
+" Shows all the usages of a name
+let g:jedi#usages_command = "<leader>u"
+
+"=========================================================
+"Flake8 - Check for pep8 compatibility 
+"========================================================
+map <leader>8 :call Flake8()<CR>
 
 " ==========================================================
 " Pathogen - Allows us to organize our vim plugins
@@ -252,17 +260,6 @@ endfunction
 " ==========================================================
 au BufRead *.js set makeprg=jslint\ %
 
-" ==========================================================
-" SuperTab - Allows us to get code completion with tab
-" ==========================================================
-" Try different completion methods depending on its context
-let g:SuperTabDefaultCompletionType = "context"
-
-
-"=========================================================
-"Flake8 - Check for pep8 compatibility everytime you write to a file
-"========================================================
-autocmd BufWritePost *.py call Flake8()
 
 
 " Add the virtualenv's site-packages to vim path
