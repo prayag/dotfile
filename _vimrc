@@ -118,10 +118,10 @@ nmap <leader>a <Esc>:Ack!
 map <leader>g :GundoToggle<CR>
 
 " Goto command using jedi-vim
-let g:jedi#goto_command = "<leader>t"
+let g:jedi#goto_assignments_command = "<leader>t"
 
 " Get definition using jedi-vim 
-let g:jedi#get_definition_command = "<leader>d"
+let g:jedi#goto_definitions_command = "<leader>d"
 
 " Rename whatever the cursor is on (including references to it)
 let g:jedi#rename_command = "<leader>r"
@@ -150,7 +150,7 @@ filetype on                   " try to detect filetypes
 filetype plugin indent on     " enable loading indent file for filetype
 set relativenumber                    " Display line numbers
 set numberwidth=2            
-set background=dark           " We are using dark background in vim
+set background=light          " We are using dark background in vim
 set title                     " show title in console title bar
 set wildmenu                  " Menu completion in command mode on <Tab>
 set wildmode=full             " <Tab> cycles between all matching choices.
