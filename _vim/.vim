@@ -1,1 +1,1 @@
-/Users/prayag/Documents/src/dotfile/_vim
+/Users/prayag/src/dotfile/_vim
